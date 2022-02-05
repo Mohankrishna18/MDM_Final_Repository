@@ -486,10 +486,10 @@ export default function MiniDrawer() {
 				<Divider />
 					
 			</Drawer>
-			<Box component="main" >		
+			<Box component="main"sx={{ flexGrow: 1, p: 3 }}>		
 			<DrawerHeader />
 			<Grid container spacing={2}>		
-			<Grid sx={12}>
+			<Grid sx={8}>
 			{component ? <SelectedComponent component={component} /> : <DummyComponent />}
 			</Grid>
 			</Grid>
